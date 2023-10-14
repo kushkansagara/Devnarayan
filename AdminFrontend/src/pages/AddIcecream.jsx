@@ -99,7 +99,7 @@ const AddIcecream = () => {
         console.log(item);
 
         // return;
-        // let result = await fetch("http://localhost:8080/icecream/cice", {
+        // let result = await fetch("https://devnarayan.onrender.com/icecream/cice", {
         //     method: "POST",
         //     headers: {
         //         "Content-Type": "application/json",
@@ -108,7 +108,7 @@ const AddIcecream = () => {
         //     },
         //     body: JSON.stringify(item)
         // })
-        let result = await axios.post("http://localhost:8080/icecream/cice", item, {
+        let result = await axios.post("https://devnarayan.onrender.com/icecream/cice", item, {
             headers: {
                 'Content-Type': 'multipart/form-data',
             }
