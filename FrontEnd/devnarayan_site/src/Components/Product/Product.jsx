@@ -6,7 +6,7 @@ import ProductCard from './ProductCard';
 
 export default function Product() {
 
-    const URL = "http://localhost:8080/icecream/allice";
+    const URL = "https://devnarayan.onrender.com/icecream/allice";
 
     const [product, setProduct] = useState([]);
     useEffect(() => {
