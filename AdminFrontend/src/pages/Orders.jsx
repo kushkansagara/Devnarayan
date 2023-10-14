@@ -25,7 +25,7 @@ const Orders = () => {
     const getOrders = async () => {
       setLoading(true);
       try {
-        const res = await axios.get("http://localhost:8080/order/getAllOrders");
+        const res = await axios.get("https://devnarayan.onrender.com/order/getAllOrders");
         setOrders(res.data.orders);
         console.log(res.data.orders);
       } catch (err) {
@@ -48,9 +48,9 @@ const Orders = () => {
   //   console.log(num , "  " ,id);
   //   let URL;
   //   if (num === 2) {
-  //     URL = `http://localhost:8080/order/outForDelivery/${id}`;
+  //     URL = `https://devnarayan.onrender.com/order/outForDelivery/${id}`;
   //   } else if (num === 3) {
-  //     URL = `http://localhost:8080/order/${id}`;
+  //     URL = `https://devnarayan.onrender.com/order/${id}`;
   //   }
 
   //   try {
@@ -67,9 +67,9 @@ const Orders = () => {
     // Make API request to update the order status
     let URL;
     if (newStatus === "outForDelivery") {
-      URL = `http://localhost:8080/order/outForDelivery/${id}`;
+      URL = `https://devnarayan.onrender.com/order/outForDelivery/${id}`;
     } else if (newStatus === "delivered") {
-      URL = `http://localhost:8080/order/${id}`;
+      URL = `https://devnarayan.onrender.com/order/${id}`;
     }
 
     try {
