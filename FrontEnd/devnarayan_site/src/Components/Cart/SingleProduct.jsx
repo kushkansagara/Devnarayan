@@ -11,7 +11,7 @@ function SingleProduct({ item, decreaseItem, increaseItem }) {
     useEffect(() => {
         const fun = async () => {
             try {
-                const res = await axios.get(`http://localhost:8080/icecream/ice/${item.icecream._id}`);
+                const res = await axios.get(`https://devnarayan.onrender.com/icecream/ice/${item.icecream._id}`);
                 setProduct(res.data);
             }
             catch (err) {
