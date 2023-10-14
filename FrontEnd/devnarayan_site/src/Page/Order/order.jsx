@@ -54,7 +54,7 @@ export default function Order() {
         }
 
         try {
-            const res = await axios.post(`http://localhost:8080/order/${user._id}`, requestBody);
+            const res = await axios.post(`https://devnarayan.onrender.com/order/${user._id}`, requestBody);
             dispatch(clearCart());
             const obj = {
                 total : 0,
