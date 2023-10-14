@@ -15,7 +15,7 @@ export default function OrderHistory() {
     useEffect(() => {
         const getOrders = async () => {
             try {
-                const res = await axios.get(`http://localhost:8080/order/getOrderById/${user._id}`);
+                const res = await axios.get(`https://devnarayan.onrender.com/order/getOrderById/${user._id}`);
                 setOrders(res.data.orders);
                 console.log(res.data.orders)
                 setLoading(false); // Set loading to false when data is fetched
