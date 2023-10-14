@@ -19,7 +19,7 @@ export default function Cart() {
     const decreaseItem = async (prop) => {
         setLoading(true);
         try {
-            const res = await axios.put(`http://localhost:8080/cart/sub/${users._id}/${prop}`);
+            const res = await axios.put(`https://devnarayan.onrender.com/cart/sub/${users._id}/${prop}`);
             dispatch(updatetotal(res.data.cart));
             return res.statusCode;
         }
@@ -36,7 +36,7 @@ export default function Cart() {
     const increaseItem = async (prop) => {
         setLoading(true);
         try {
-            const res = await axios.put(`http://localhost:8080/cart/add/${users._id}/${prop}`);
+            const res = await axios.put(`https://devnarayan.onrender.com/cart/add/${users._id}/${prop}`);
             dispatch(updatetotal(res.data.cart));
             return res;
         }
@@ -51,7 +51,7 @@ export default function Cart() {
         setLoading(true);
         dispatch(clearCart());
         try {
-            const res = await axios.put(`http://localhost:8080/cart/${users._id}/clear`);
+            const res = await axios.put(`https://devnarayan.onrender.com/cart/${users._id}/clear`);
             dispatch(updatetotal(res.data.cart));
             return res;
         } catch (error) {
