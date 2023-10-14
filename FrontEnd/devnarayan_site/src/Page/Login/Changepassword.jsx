@@ -16,7 +16,7 @@ export default function Changepassword() {
         // e.preventDefault();
         try {
             console.log(item);
-            let result = await fetch("http://localhost:8080/change-password", {
+            let result = await fetch("https://devnarayan.onrender.com/change-password", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
