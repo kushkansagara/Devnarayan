@@ -14,7 +14,7 @@ const initialState = {
 export const getCartItems = createAsyncThunk(
   'cart/getCartItems',
   async (name, thunkAPI) => {
-    const url = `http://localhost:8080/cart/${users._id}`;
+    const url = `https://devnarayan.onrender.com/cart/${users._id}`;
     try {
       const resp = await axios(url);
       return resp.data;
