@@ -7,7 +7,7 @@ function OrderItem({ count, m }) {
     useEffect(()=>{
         const getProduct = async (m) => {
             try {
-                const res = await axios.get(`http://localhost:8080/icecream/ice/${m.icecream._id}`);
+                const res = await axios.get(`https://devnarayan.onrender.com/icecream/ice/${m.icecream._id}`);
                 setProduct(res.data);
                 return res.data;
             } catch (err) {
