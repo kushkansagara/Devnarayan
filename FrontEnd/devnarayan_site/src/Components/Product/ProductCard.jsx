@@ -12,7 +12,7 @@ export default function ProductCard({ data }) {
   const [loading, setLoading] = useState(false);
 
   const UpdateCart = async () => {
-    const apiUrl = `http://localhost:8080/cart/add/${user._id}/${data._id}`;
+    const apiUrl = `https://devnarayan.onrender.com/cart/add/${user._id}/${data._id}`;
 
     const headers = {
       'Content-Type': 'application/json',
