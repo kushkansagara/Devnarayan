@@ -11,7 +11,7 @@ import Header from '../../Components/Header/Header';
 
 export default function Products() {
 
-    const URL = "http://localhost:8080/icecream/allice";
+    const URL = "https://devnarayan.onrender.com/icecream/allice";
     const location = useLocation();
     const [product, setProduct] = useState([]);
     const [filterData, setFilterData] = useState([]);
