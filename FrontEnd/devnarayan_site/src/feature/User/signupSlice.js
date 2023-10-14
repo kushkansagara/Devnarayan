@@ -5,7 +5,7 @@ export const signupUser = createAsyncThunk('signup/signupUser',
     async (usersCredential) => {
 
         try {
-            const request = await axios.post('http://localhost:8080/signup', usersCredential);
+            const request = await axios.post('https://devnarayan.onrender.com/signup', usersCredential);
             const response = await request.data;
             console.log(response,"Responce");
             localStorage.setItem('user', JSON.stringify(response));
