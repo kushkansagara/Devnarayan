@@ -13,7 +13,7 @@ const OtpInputCard = ({ title, sendOTP, otpEnabled, ...rest }) => {
         try {
             console.log(OTP);
             const item2 ={OTP}
-            let result = await fetch("http://localhost:8080/verifyOTP", {
+            let result = await fetch("https://devnarayan.onrender.com/verifyOTP", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -48,7 +48,7 @@ export default function Forgot() {
         console.log(item);
         setOtpEnabled(true);
         console.log(item);
-        let result = await fetch("http://localhost:8080/forgot-password", {
+        let result = await fetch("https://devnarayan.onrender.com/forgot-password", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
