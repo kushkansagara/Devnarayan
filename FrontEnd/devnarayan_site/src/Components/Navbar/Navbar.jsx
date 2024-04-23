@@ -139,7 +139,7 @@ export default function Navbar() {
                 })}>Product</NavLink>
               </div>
               <NavLink to="/" className="navbar-brand mx-5 d-none d-lg-block">
-                <h1 className="m-0 display-4 text-primary"><span className="text-secondary">DEV</span>NARAYAN</h1>
+                <h1 className="m-0 display-4 text-primary"><span className="text-secondary">Scoop</span>haven</h1>
               </NavLink>
               <div className="navbar-nav mr-auto py-0 login-nav">
                 {user === null && <>
